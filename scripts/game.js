@@ -44,7 +44,7 @@ var play_count = 2,
     game_data = {
         cur_level: 1,
         coin: 0,
-        total_level: 2,
+        total_level: 10,
         sound: !0,
         hint_cost: 6
     },
