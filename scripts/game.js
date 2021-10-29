@@ -406,7 +406,7 @@ Game.prototype.create = function() {
                     } else "sound" === a.name ? switch_audio(a) : "home" === a.name && m.scene.start("menu");
                 else "pay_hint" === a.name ? game_data.coin >= game_data.hint_cost ? (game_data.coin -= game_data.hint_cost, M.setText(game_data.coin), L()) : alert("No enough coin!") : "close" === a.name ? (y = "play", G.clear(!0, !0)) : "exit" === a.name && m.scene.start("menu");
                 "next" === a.name && (game_data.cur_level <=
-                    game_data.total_level ? (play_count++, play_count > show_at && (play_count = 0, show_ad()), m.scene.start("game")) : (alert("Awesome! You've completed all levels. Level will be reset to 1."), game_data.cur_level = 1, m.scene.start("menu")))
+                    game_data.total_level ? (play_count++, play_count > show_at && (play_count = 0, show_ad()), m.scene.start("game")) : (alert("The fences are once again electrified! You may safely leave the control room now. "), game_data.cur_level = 1, m.scene.start("menu")))
             }
         }))
     }, this);
